@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void main()
+{
+    float speed, threshold = 100, over_speed = 140;
+
+    clrscr();
+
+    printf("ENTER SPEED:");
+    scanf("%f", &speed);
+
+    if (speed <= threshold)
+    {
+        printf("FINE STATUS: NO FINE");
+    }
+    else if (speed <= over_speed)
+    {
+        printf("FINE STATUS: 500 RS. FINE");
+    }
+    else
+    {
+        printf("FINE STATUS: 1000 RS. FINE");
+    }
+
+    getch();
+}
