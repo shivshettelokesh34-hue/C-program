@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int main()
+void main()
 {
     int a, b;
-
+clrscr ();
     printf("Enter two numbers: ");
     scanf("%d %d", &a, &b);
 
@@ -13,6 +13,6 @@ int main()
         printf("%d is smallest", b);
     else
         printf("Both numbers are equal");
-
-    return 0;
+getch ();
+    
 }
