@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    float voltage, current, resistance;
+
+    printf("Enter Voltage (V): ");
+    scanf("%f", &voltage);
+
+    printf("Enter Current (I): ");
+    scanf("%f", &current);
+
+    if(current != 0)
+    {
+        resistance = voltage / current;
+
+        printf("\nVoltage = %.2f V", voltage);
+        printf("\nCurrent = %.2f A", current);
+        printf("\nResistance = %.2f Ohm", resistance);
+    }
+    else
+    {
+        printf("Current cannot be zero!");
+    }
+
+    return 0;
+}
